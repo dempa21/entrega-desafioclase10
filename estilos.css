@@ -1,0 +1,585 @@
+* {
+    margin:0;
+    padding:0;
+    }
+    
+        body {
+            margin: 0;
+            background: url("images/fondox.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    
+        .seccion1 {
+            height: 100vh;
+            background: white;
+            box-sizing: border-box;
+            padding: 35px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            padding-bottom: 50px;
+        }
+
+        .seccion1 img {
+            width: 450px;
+        }
+    
+        .seccion2 {
+            background: blue;
+            color: white;
+            box-sizing: border-box;
+            padding: 35px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+
+        
+        }
+
+        .seccion2 img {
+            width: 450px;
+        }
+
+        .seccion2-clases {
+            background: blue;
+            color: white;
+            box-sizing: border-box;
+            padding: 35px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            display: flex;
+            justify-content: start;
+
+        }
+
+        .seccion3-clases {
+            background: rgba(198, 162, 120, 0.747);
+            box-sizing: border-box;
+            padding: 35px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            display: flex;
+            justify-content: start;
+        }
+
+
+    
+        .seccion3 {
+            background: rgba(198, 162, 120, 0.747);
+            box-sizing: border-box;
+            padding: 35px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .seccion3 img {
+            width: 450px;
+        }
+    
+        .seccion-prog p {
+            font-family: 'Amita', cursive;
+            position: absolute;
+            width: 90%;
+        }
+        
+        .seccion3 img {
+            float: left;
+    }
+    
+        .seccion1 p {
+            margin: 0;
+        }
+    
+        div img {
+        float: left;
+        }
+        
+        div p {
+            padding-left: 20px;
+        }
+    
+        /* .seccion3 {
+            background: rgba(198, 162, 120, 0.747);
+        } */
+    
+        /*Barra nav*/
+        /*primero en el móvil (mobile first)*/
+    nav {
+      padding: 1em;
+      font-family: Verdana, Geneva, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background: #333;
+    }
+    nav li a {
+      color: white;
+      display: block;
+      text-decoration: none;
+      padding: .5em 1em;
+      height: 20px;
+    }
+    nav li a:hover {
+      background:rgba(233, 173, 105, 0.871);
+      color: white;
+    }
+    
+    body {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 70vh 70vh 70vh 70vh;
+        grid-template-areas: "head head head head"
+                            "head head nav nav"
+                           "seccion1 seccion1 seccion1 seccion1"
+                           "seccion2 seccion2 seccion2 seccion2"
+                           "seccion3 seccion3 seccion3 seccion3";}
+    
+    header {
+        grid-area: head;
+    }
+    
+    nav {
+        grid-area: nav;
+        position: absolute;
+        top: 20px;
+        right: 0px;
+    }
+    
+    .seccion1 {
+        grid-area: seccion1;
+        grid-row-start: 1;
+        height: 600px;
+    }
+    
+    .seccion2{
+        grid-area: seccion2;
+        grid-row-start: 2;
+        height: 450px;
+        margin-top: 200px;
+    }
+    
+    .seccion3 {
+        grid-area: seccion3;
+        grid-row-start: 4;
+        height: 650px;
+
+    }
+
+    .seccion-prog {background: rgba(233, 173, 105, 0.871);
+    box-sizing: border-box;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    
+    }
+    footer {
+        grid-area: footer;
+    }
+    
+
+    /*SECCION NUESTRO PROGRAMA*/
+
+    .nuestroprograma {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 70vh 70vh 70vh 70vh;
+        grid-template-areas: "head head head head"
+                            "head head nav nav"
+                           "seccion-prog seccion-prog seccion-prog seccion-prog"
+                           "seccion-prog seccion-prog seccion-prog seccion-prog"
+                           "seccion-prog seccion-prog seccion-prog seccion-prog";}
+    
+
+
+
+
+
+
+
+    @media screen and (min-width: 480px) {
+        nav ul {
+          display: flex;
+          justify-content: right;
+        }
+      }
+
+    /* VERSION TABLETA */
+
+/* Si la pantalla tiene un mínimo de 768 px ejecuto el siguiente código */
+@media (min-width: 768px) {
+
+    .body {
+        display: grid;
+        grid-template-areas: 
+        "head head"
+        "nav nav"
+       "seccion1 seccion1"
+       "seccion2 seccion2"
+       "seccion3 seccion3";
+        gap: 20px;
+    }
+}
+
+/* VERSION DE ESCRITORIO */
+
+@media(min-width:1024px) {
+    .body {
+        display: grid;
+        grid-template-areas: 
+        "head head head head"
+                            "head head nav nav"
+                           "seccion1 seccion1 seccion1 seccion1"
+                           "seccion2 seccion2 seccion2 seccion2"
+                           "seccion3 seccion3 seccion3 seccion3";
+    }
+
+}
+
+/*Responsive*/
+@media screen and (min-width: 480px) {
+index.seccion1 {
+    width:fit-content;
+}
+}
+    
+/*Nuestro programa*/
+@media screen and (max-width: 480px) {
+    .nuestroprograma.nav ul {
+      display: flex;
+      justify-content: right;
+    }
+
+    .seccion-prog div{
+        width: 100%;
+    }
+
+    .nuestroprograma.seccion-prog {
+        grid-row-start: 2;
+    }
+
+    .nuestroprograma.seccion-prog p {
+        font-size: 30px;
+    }
+  }
+
+  @media screen and (max-width: 780px) {
+    .nuestroprograma.nav ul {
+      display: flex;
+      justify-content: right;
+    }
+
+    .nuestroprograma.seccion-prog {
+        grid-row-start: 2;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .nuestroprograma.nav ul {
+      display: flex;
+      justify-content: right;
+    }
+
+    .nuestroprograma.seccion-prog {
+        grid-row-start: 2;
+    }
+  }
+
+
+
+  /*Clases*/
+
+    
+        .clases.body {
+            margin: 0;
+            background: url("images/fondox.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    
+        .clases.seccion1 {
+            height: 100vh;
+            background: white;
+            box-sizing: border-box;
+            padding: 35px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+    
+        .clases.seccion2 {
+            background: blue;
+            color: white;
+            box-sizing: border-box;
+            padding: 35px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+    
+        .clases.seccion1 p {
+            margin: 0;
+        }
+    
+        .clases.div img {
+        float: left;
+        }
+        
+        .clases.div p {
+            padding-left: 20px;
+        }
+    
+        .clases.seccion3 {
+            background: rgba(198, 162, 120, 0.747);
+        }
+    
+        /*Barra nav*/
+        /*primero en el móvil (mobile first)*/
+    .clases.nav {
+      padding: 1em;
+      font-family: Verdana, Geneva, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .clases.nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background: #333;
+    }
+    .clases.nav li a {
+      color: white;
+      display: block;
+      text-decoration: none;
+      padding: .5em 1em;
+      height: 20px;
+    }
+    .clases.nav li a:hover {
+      background:rgba(233, 173, 105, 0.871);
+      color: white;
+    }
+    
+    .clases.body {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 70vh 70vh 70vh 70vh;
+        grid-template-areas: "head head head head"
+                            "head head nav nav"
+                           "seccion1 seccion1 seccion1 seccion1"
+                           "seccion2 seccion2 seccion2 seccion2"
+                           "seccion3 seccion3 fooseccion3ter seccion3";}
+    
+    .clases.header {
+        grid-area: head;
+    }
+    
+    .clases.nav {
+        grid-area: nav;
+        position: absolute;
+        top: 20px;
+        right: 0px;
+    }
+    
+    .clases.seccion1 {
+        grid-area: seccion1;
+        grid-row-start: 1;
+        height: 600px;
+        display: flex;
+        justify-content: end;
+    }
+    
+    .clases.seccion1 img{
+        align-items: flex-end;
+        width: 600px;
+    }
+    
+    .clases.seccion2{
+        grid-area: seccion2;
+        grid-row-start: 2;
+        height: 450px;
+        margin-top: 200px;
+        display: flex;
+        justify-content:start;
+    }
+    
+    .clases.seccion3 {
+        grid-area: seccion3;
+        grid-row-start: 4;
+        height: 450px;
+        display: flex;
+        justify-content: start;
+        
+    }
+    .clases.footer {
+        grid-area: footer;
+    }
+    
+    
+    @media screen and (min-width: 480px) {
+        clases.nav ul {
+          display: flex;
+          justify-content: right;
+        }
+      }
+
+
+      /*Contacto*/
+
+
+        
+            contacto.body {
+                margin: 0;
+                background: url("images/fondox.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        
+            contacto.seccion1 {
+                height: 100vh;
+                background: white;
+                box-sizing: border-box;
+                padding: 35px;
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+            }
+        
+            contacto.seccion2 {
+                background: blue;
+                color: white;
+                box-sizing: border-box;
+                padding: 35px;
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+            }
+        
+            contacto.seccion3 {
+                box-sizing: border-box;
+                padding: 35px;
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+            }
+        
+            contacto.seccion3 img {
+                float: left;
+        }
+        
+        contacto.seccion1 p {
+                margin: 0;
+            }
+        
+            contacto.div img {
+            float: left;
+            }
+            
+            contacto.div p {
+                padding-left: 20px;
+            }
+        
+            contacto.seccion3 {
+                background: rgba(198, 162, 120, 0.747);
+            }
+        
+            /*Barra nav*/
+            /*primero en el móvil (mobile first)*/
+            contacto.nav {
+          padding: 1em;
+          font-family: Verdana, Geneva, sans-serif;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+        contacto.nav ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          background: #333;
+        }
+        contacto.nav li a {
+          color: white;
+          display: block;
+          text-decoration: none;
+          padding: .5em 1em;
+          height: 20px;
+        }
+        contacto.nav li a:hover {
+          background:rgba(233, 173, 105, 0.871);
+          color: white;
+        }
+        
+        contacto.body {
+            display: grid;
+            width: 100%;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 70vh 70vh 70vh 70vh;
+            grid-template-areas: "head head head head"
+                                "head head nav nav"
+                               "seccion1 seccion1 seccion1 seccion1"
+                               "seccion2 seccion2 seccion2 seccion2"
+                               "seccion3 seccion3 fooseccion3ter seccion3";}
+        
+        contacto.header {
+            grid-area: head;
+        }
+        
+        contacto.nav {
+            grid-area: nav;
+            position: absolute;
+            top: 20px;
+            right: 0px;
+        }
+        
+        .contacto.seccion1 {
+            grid-area: seccion1;
+            grid-row-start: 1;
+            height: 600px;
+        }
+        
+        contacto.seccion2{
+            grid-area: seccion2;
+            grid-row-start: 2;
+            height: 450px;
+            margin-top: 200px;
+        }
+        
+        contacto.seccion3 {
+            grid-area: seccion3;
+            grid-row-start: 4;
+            height: 650px;
+            
+        }
+        
+        contacto.footer {
+            grid-area: footer;
+        }
+        
+        
+        @media screen and (min-width: 480px) {
+            contacto.nav ul {
+              display: flex;
+              justify-content: right;
+            }
+          }
