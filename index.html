@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <header>
     <nav>
@@ -19,9 +20,9 @@
 </header>
 <body>
     <section class="seccion1">
-        <img src="images/vecteezy_circ.jpg" alt="">
+        <img data-aos="fade-right" src="images/vecteezy_circ.jpg" alt="">
     </section>
-    <section class="seccion2">
+    <section class="seccion2" class="item divDos">
         <div>
         <img src="images/ABCyoga.jpg" width="450px" alt="">
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero esse minus ex eveniet commodi libero. Ullam natus dolorem tenetur repellat aut sit blanditiis veritatis velit exercitationem quos consectetur, ipsum sint, sunt, magni excepturi facilis pariatur? Dolorum.</p>
@@ -33,5 +34,8 @@
         </div>
     </section>
     <footer><p>Todos los derechos reservados</p></footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

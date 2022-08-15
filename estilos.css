@@ -39,6 +39,13 @@
         
         }
 
+        .seccion2:hover {
+            background-color: black;
+            height: 320px;
+            width: 320px;
+            transition: all 4s;
+        }
+
         .seccion2 img {
             width: 450px;
         }
